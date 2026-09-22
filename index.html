@@ -331,13 +331,16 @@
     }
     .quick-card a:hover { color: var(--atlas-rust); }
 
-    .quick-card strong.quick-copy {
+    .quick-card strong.quick-copy,
+    .prep-card strong.quick-copy {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    .quick-card strong.quick-copy code {
+    .quick-card strong.quick-copy code,
+    .prep-card strong.quick-copy code {
       color: var(--atlas-rust);
     }
     .quick-copy-button {
@@ -346,7 +349,7 @@
 
     .prep-grid {
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
+      grid-template-columns: 1.1fr 0.95fr 0.95fr;
       gap: 20px;
       margin: 20px 0;
       align-items: stretch;
@@ -914,6 +917,11 @@
         <span>Goal</span>
         <strong>Ready to learn about Microsoft Cowork</strong>
         <p>At the end, confirm the assigned username appears in the bottom left corner of Cowork.</p>
+      </div>
+      <div class="prep-card">
+        <span>Lab code</span>
+        <strong class="quick-copy"><code>CoworkPartner-F9P4</code><button type="button" class="copy-button quick-copy-button" data-copy="CoworkPartner-F9P4">Copy</button></strong>
+        <p>Enter this exactly as shown when the lab assistant asks for your workshop pass code.</p>
       </div>
     </section>
 
